@@ -1,0 +1,17 @@
+{
+  "frontendFolder": "C:/Users/Ivan/Documents/GitHub/Course-work-on-Java/./src/main/frontend",
+  "themeFolder": "themes",
+  "themeResourceFolder": "C:/Users/Ivan/Documents/GitHub/Course-work-on-Java/./src/main/frontend/generated/jar-resources",
+  "staticOutput": "C:/Users/Ivan/Documents/GitHub/Course-work-on-Java/target/classes/META-INF/VAADIN/webapp/VAADIN/static",
+  "generatedFolder": "generated",
+  "statsOutput": "C:\\Users\\Ivan\\Documents\\GitHub\\Course-work-on-Java\\target\\classes\\META-INF\\VAADIN\\config",
+  "frontendBundleOutput": "C:\\Users\\Ivan\\Documents\\GitHub\\Course-work-on-Java\\target\\classes\\META-INF\\VAADIN\\webapp",
+  "devBundleOutput": "C:/Users/Ivan/Documents/GitHub/Course-work-on-Java/target/dev-bundle/webapp",
+  "devBundleStatsOutput": "C:/Users/Ivan/Documents/GitHub/Course-work-on-Java/target/dev-bundle/config",
+  "jarResourcesFolder": "C:/Users/Ivan/Documents/GitHub/Course-work-on-Java/./src/main/frontend/generated/jar-resources",
+  "themeName": "",
+  "clientServiceWorkerSource": "C:\\Users\\Ivan\\Documents\\GitHub\\Course-work-on-Java\\target\\sw.ts",
+  "pwaEnabled": false,
+  "offlineEnabled": false,
+  "offlinePath": "'offline.html'"
+}
