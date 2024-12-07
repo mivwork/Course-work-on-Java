@@ -1,0 +1,69 @@
+vaadin-app-layout::part(navbar) {
+    background-color: #2186EB;
+    color: white;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.navbar-title {
+    color: #F5F5F5;
+    padding: 10px;
+    text-align: center;
+}
+
+.custom-scroller {
+    background-color: #57A7F5;
+    color: #57A7F5;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 25px;
+    margin-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.custom-scroller * {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.custom-sidenav-item {
+    color: #F5F5F5;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.background-image {
+    background-image: url('C:\Users\Ivan\Downloads\istockphoto-1316894945-612x612.jpg');
+    background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Предотвращает повторение изображения */
+    height: 100%; /* Устанавливает высоту элемента на 100% высоты окна */
+    width: 100%; /* Устанавливает ширину элемента на 100% ширины окна */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+  width: 225px;
+  min-height: 350px;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; /* Размещаем элементы в колонку */
+  border-radius: 4px;
+  transition: 0.2s;
+  position: relative;
+}
+
+/* При наведении на карточку - меняем цвет тени */
+.card:hover {
+  box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+
