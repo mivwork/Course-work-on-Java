@@ -1,31 +1,49 @@
 package com.example.Air_transport.model;
+import jakarta.persistence.*;
 
+@Entity
+@Table(name = "plane")
 public class Plane {
-    private String name;
-    private String description;
-    private int year;
-    private String imageUrl;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
 
-    public Plane(String name, String description, int year, String imageUrl) {
-        this.name = name;
-        this.description = description;
-        this.year = year;
-        this.imageUrl = imageUrl;
+    @ManyToOne
+    @JoinColumn(name = "manufacturer_id")
+    private ManufacturerPlane manufacturer_id;
+
+    @ManyToOne
+    @JoinColumn(name = "model_id")
+    private ModelPlane model_id;
+
+    @Column(name = "image_data")
+    private byte[] image_Data;
+
+    @Column(name = "image_name")
+    private String image_Name;
+
+    public Plane() {
     }
 
-    public String getName() {
-        return name;
+    public Long getId() {
+        return id;
     }
 
-    public String getDescription() {
-        return description;
+    public ManufacturerPlane getManufacturer_id() {
+        return manufacturer_id;
     }
 
-    public int getYear() {
-        return year;
+    public ModelPlane getModel_id() {
+        return model_id;
     }
 
-    public String getImageUrl() {
-        return imageUrl;
+    public byte[] getImage_Data() {
+        return image_Data;
+    }
+
+    public String getImage_Name() {
+        return image_Name;
     }
 }
+

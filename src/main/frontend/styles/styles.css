@@ -39,31 +39,50 @@ vaadin-app-layout::part(navbar) {
     border: none;
 }
 
-.background-image {
-    background-image: url('C:\Users\Ivan\Downloads\istockphoto-1316894945-612x612.jpg');
-    background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
-    background-position: center; /* Центрирует изображение */
-    background-repeat: no-repeat; /* Предотвращает повторение изображения */
-    height: 100%; /* Устанавливает высоту элемента на 100% высоты окна */
-    width: 100%; /* Устанавливает ширину элемента на 100% ширины окна */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .card {
-  width: 225px;
-  min-height: 350px;
+  width: 100%;
+  height: 370px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column; /* Размещаем элементы в колонку */
-  border-radius: 4px;
+  border-radius: 9px;
   transition: 0.2s;
   position: relative;
 }
 
 /* При наведении на карточку - меняем цвет тени */
 .card:hover {
-  box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+    box-shadow: 8px 16px 32px rgba(33, 134, 235, 0.8);
 }
 
+.no-drag {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.centered-bold-label {
+  text-align: center; /* Выравнивание текста по центру */
+  font-weight: bold; /* Жирный текст */
+}
+
+.centered-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.filter-bar {
+  padding-top: 20px;
+  padding-left: 80px;
+  display: flex;
+  justify-content: flex-start; /* Выравнивание по левому краю */
+  margin-bottom: 20px;
+  width: 100%; /* Занимает всю ширину контейнера */
+}
